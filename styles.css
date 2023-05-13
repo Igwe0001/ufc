@@ -18,6 +18,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -544,8 +545,11 @@ footer h1 {
 .footer__bottom {
   padding: 3rem 0;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between;
+  align-items: baseline; */
 }
 
 .footer__social {
@@ -658,6 +662,14 @@ footer h1 {
     gap: 5rem;
     padding: 3rem 0;
     align-items: center;
+  }
+
+  .footer__bottom {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 

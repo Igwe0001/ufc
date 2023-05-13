@@ -5,8 +5,7 @@ const navUl = document.querySelector("ul");
 const title = document.querySelector(".home__link");
 const navLinks = document.querySelector(".nav__links");
 const icon = document.querySelector(".search > i");
-
-console.log(icon);
+const footerBtn = document.querySelector(".footer__btn");
 
 // Navigation
 hamburger.addEventListener("click", () => {
@@ -29,4 +28,9 @@ window.addEventListener("scroll", () => {
   hamburgerItem.forEach((e) => {
     e.classList.toggle("sticky", window.scrollY > 0);
   });
+});
+
+//scroll to top
+footerBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
 });
