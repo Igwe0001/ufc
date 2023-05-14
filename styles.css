@@ -129,9 +129,6 @@ li a {
   font-size: 3.5rem;
 }
 
-.nav__links.sticky a {
-  color: var(--color-0);
-}
 
 .navigation__buttons {
   display: flex;
@@ -572,6 +569,11 @@ footer h1 {
 }
 
 @media screen and (min-width: 400px) {
+
+  .nav__links.sticky a {
+  color: var(--color-0);
+}
+
   .grid__title {
     padding: 0;
   }
