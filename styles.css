@@ -283,13 +283,8 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
-  /* padding: 3rem 0; */
+  grid-auto-rows: 25rem;
   padding: 2rem 0;
-}
-
-.grid__item {
-  /* outline: 1px solid; */
-  height: 25rem;
 }
 
 .grid__image {
@@ -313,10 +308,10 @@ section {
   font-weight: bold;
 }
 
-.stories .grid__item {
-  /* height: 25rem; */
-  height: 30rem;
+.stories .section__grid--items {
+  grid-auto-rows: 30rem;
 }
+
 
 .stories .grid__image {
   /* height: 60%; */
