@@ -617,10 +617,8 @@ footer h1 {
   color: var(--color-2);
 }
 
-@media screen and (min-width: 400px) {
-  .nav__links.sticky a {
-    color: var(--color-0);
-  }
+@media screen and (min-width: 500px) {
+
 
   .grid__title {
     padding: 0;
@@ -680,6 +678,10 @@ footer h1 {
 
   .hamburger__container {
     display: none;
+  }
+
+    .nav__links.sticky a {
+    color: var(--color-0);
   }
 
   /* Hero styles */
