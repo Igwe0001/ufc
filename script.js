@@ -59,7 +59,9 @@ input.addEventListener("keypress", function (event) {
     console.log(input.value);
     input.value = "";
     searchBox.classList.remove("open");
+    hamburger.classList.remove("open");
+    searchBox.classList.remove("open");
     icon.classList.replace("fa-xmark", "fa-magnifying-glass");
-    navLinks.classList.remove("open")
+    navLinks.classList.remove("open");
   }
 });
