@@ -129,7 +129,6 @@ li a {
   font-size: 3.5rem;
 }
 
-
 .navigation__buttons {
   display: flex;
   gap: 3rem;
@@ -259,6 +258,8 @@ section {
 
 .section__grid {
   border-top: 2px solid var(--color-0);
+  max-width: 160rem;
+  margin: auto;
 }
 
 .section__title {
@@ -311,7 +312,6 @@ section {
 .stories .section__grid--items {
   grid-auto-rows: 30rem;
 }
-
 
 .stories .grid__image {
   /* height: 60%; */
@@ -506,13 +506,18 @@ button[type="submit"]:hover {
 }
 
 /* Footer */
-
 footer {
-  padding: 6rem 5%;
+  width: 100%;
+  background-color: var(--color-0);
+  height: 30rem;
   position: relative;
   bottom: 0;
-  height: 30rem;
-  background-color: var(--color-0);
+  padding: 6rem 5%;
+}
+
+.footer {
+  max-width: 160rem;
+  margin: auto;
 }
 
 footer h1 {
@@ -564,10 +569,9 @@ footer h1 {
 }
 
 @media screen and (min-width: 400px) {
-
   .nav__links.sticky a {
-  color: var(--color-0);
-}
+    color: var(--color-0);
+  }
 
   .grid__title {
     padding: 0;
@@ -670,19 +674,8 @@ footer h1 {
   }
 }
 
-/* 
-@media screen and (min-width: 1200px) {
-  .videos .section__grid--items {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 120px);
+@media screen and (min-height: 640px) {
+  .hero__image--container img {
+    margin-bottom: -100%;
   }
-  .videos .section__grid--items .grid-1 {
-    grid-row: 1 / span 3;
-    grid-column: 1 / span 3;
-  }
-
-  .videos .section__grid--items .grid-2{
-    grid-column: 4 / span 5;
-    grid-row: ;
-  }
-} */
+}
